@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "1da7bd2e-f93e-4ffa-80fe-9cecf017980b",
+		"name": "Locação",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Locação ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"IdFilme\": \"tt74589641\",\r\n\t\"IdCliente\": \"a270e1e2-ed87-4b81-add4-8d7866679381\",\r\n\t\"DataLocacao\": \"2020-02-14T23:17:00\",\r\n\t\"DataDevolucao\": \"1900-01-01T00:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60690/api/locacao",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"locacao"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

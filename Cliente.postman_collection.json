@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "5f4c3875-dc99-433a-ada4-d82ff28dfc03",
+		"name": "Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cliente 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Cpf\": \"12345678900\",\r\n    \"Nome\": \"Fulano da Silva\",\r\n    \"Endereco\": \"Rua A, 1\",\r\n    \"Status\": \"A\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60690/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cliente 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"cpf\": \"00987654321\",\r\n\t\"nome\": \"Sicrano de Souza\",\r\n\t\"endereco\": \"Rua B, 2\",\r\n\t\"Status\": \"A\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60690/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Cliente Específico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60690/api/cliente/72ae57fd-992b-4e25-b3b3-d6a4edca32c0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"cliente",
+						"72ae57fd-992b-4e25-b3b3-d6a4edca32c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\": \"72ae57fd-992b-4e25-b3b3-d6a4edca32c0\",\r\n    \"Cpf\": \"12345678900\",\r\n    \"Nome\": \"Fulano da Silva\",\r\n    \"Endereco\": \"Rua Sem Saida, 0\",\r\n    \"Status\": \"A\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:60690/api/cliente/72ae57fd-992b-4e25-b3b3-d6a4edca32c0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"cliente",
+						"72ae57fd-992b-4e25-b3b3-d6a4edca32c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Cliente (Marcar como Inativo)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60690/api/cliente/72ae57fd-992b-4e25-b3b3-d6a4edca32c0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"cliente",
+						"72ae57fd-992b-4e25-b3b3-d6a4edca32c0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:60690/api/cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "60690",
+					"path": [
+						"api",
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
